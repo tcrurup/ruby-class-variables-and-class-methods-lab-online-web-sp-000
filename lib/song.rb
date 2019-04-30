@@ -27,7 +27,11 @@ class Song
   def self.genres
     genre_hash = Hash.new
     @@genres.each do |genre|
-      
+      if genre_hash.has_key?(genre)
+        genre_hash[genre] += 1
+      else
+        genre_hash[genre] = 0
+      end
     end
   end
   

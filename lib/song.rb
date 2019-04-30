@@ -37,6 +37,7 @@ class Song
         genre_hash[genre] = 0
       end
     end
+    genre_hash
   end
   
 end

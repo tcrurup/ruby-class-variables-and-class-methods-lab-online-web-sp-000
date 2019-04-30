@@ -10,6 +10,7 @@ class Song
     @name = song_name
     @artist = artist
     @genre = genre
+    
     @@count += 1
     @@genres << genre
     @@artists << artist
@@ -21,6 +22,13 @@ class Song
   
   def self.artists
     @@artists.uniq
+  end
+  
+  def self.genres
+    genre_hash = Hash.new
+    @@genres.each do |genre|
+      
+    end
   end
   
 end

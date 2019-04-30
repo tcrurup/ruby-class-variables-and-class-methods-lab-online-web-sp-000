@@ -20,7 +20,7 @@ class Song
   end
   
   def self.artists
-    @@artists.collect 
+    @@artists.uniq
   end
   
 end
